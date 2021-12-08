@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <title>Schmakeup</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script>
+      const onContactClick = function () {
+        location.href = "#";
+      };
+      const onLearnMoreClick = function () {
+        location.href = "./pages/about.html";
+      };
+    </script>
+  </head>
+  <body id="home">
+    <header>
+      <a class="logo" href="./index.html">
+        <img
+          src="./images/schmakeup.svg"
+          alt="An S in rounded square, the Schmakeup logo"
+        />
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/services.html">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+
+    <main>
+      <div class="banner">
+        <div class="banner__text">
+          <h1>Schmakeup</h1>
+          <p>Professional Makeup Artist</p>
+          <div>
+            <button onclick="onContactClick()" type="button">
+              Contact Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__text">
+          <h2>About me</h2>
+          <p>
+            Maya Schultz is a professional makeup artist passionate about making
+            every client feel their most beautiful. Experience working in all
+            facets of makeup artistry including; bridal, editorial, events,
+            photoshoots, etc. Maya prioritizes her client's needs and always
+            aims to please.
+          </p>
+          <div class="content__text__buttons">
+            <button onclick="onLearnMoreClick()" type="button">
+              Learn more About Me
+            </button>
+          </div>
+        </div>
+        <img src="./images/homepage.jpg" />
+      </div>
+    </main>
+  </body>
+</html>
