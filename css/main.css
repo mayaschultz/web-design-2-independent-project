@@ -286,6 +286,16 @@ tr:nth-child(even) {
   font-size: 1.125rem;
 }
 
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(214, 201, 227, 1);
+  color: #fff;
+  text-align: center;
+}
+
 /* Tablet and Desktop navigation, and tablet stylings */
 @media screen and (min-width: 48em) {
   .banner {
