@@ -192,26 +192,26 @@ main {
   margin: 0 auto 0 auto;
 }
 
-.content__text {
+.content-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 36px;
 }
 
-.content__text h2 {
+.content-text h2 {
   font-size: 3rem;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
-.content__text p {
+.content-text p {
   font-size: 1.125rem;
   line-height: 28px;
   margin-top: 8px;
 }
 
-.content__text__buttons {
+.content-text-buttons {
   display: flex;
   justify-content: left;
 }
@@ -257,7 +257,7 @@ tr:nth-child(even) {
   padding: 0 0 24px 24px;
 }
 
-#about .content__text {
+#about .content-text {
   width: 100%;
 }
 
@@ -272,7 +272,7 @@ tr:nth-child(even) {
   margin-bottom: 16px;
 }
 
-#services .content__text {
+#services .content-text {
   width: 100%;
   margin-bottom: 0px;
 }
@@ -292,7 +292,7 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: rgba(214, 201, 227, 1);
-  color: #fff;
+  color: black;
   text-align: center;
 }
 
@@ -303,7 +303,7 @@ footer {
     justify-content: left;
   }
 
-  .banner__text {
+  .banner-text {
     text-align: left;
   }
 
@@ -311,7 +311,7 @@ footer {
     font-size: 6rem;
   }
 
-  .banner__text p {
+  .banner-text p {
     font-size: 3rem;
   }
 
@@ -385,26 +385,26 @@ footer {
     height: 50%;
   }
 
-  .content__text {
+  .content-text {
     padding-right: 36px;
     text-align: left;
     align-items: start;
   }
 
-  .content__text h2 {
+  .content-text h2 {
     font-size: 3rem;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
-  .content__text p {
+  .content-text p {
     font-size: 1.125rem;
     line-height: 28px;
     margin-top: 8px;
   }
 
 
-  #about .content__text {
+  #about .content-text {
     width: 50%;
   }
 
