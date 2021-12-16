@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:400,700&family=PT+Serif:400,700');
+html {
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "PT Serif", serif;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -275,7 +278,6 @@ tr:nth-child(even) {
 }
 
 #list-of-services {
-  padding-inline-start: 0px;
   list-style-position: inside;
 }
 
