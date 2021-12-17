@@ -82,10 +82,11 @@ nav a:hover,nav a:focus {
   width: 56px;
 }
 
+.nav-toggle-label {
+  display: flex;
+}
 .nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
+  display: none;
 }
 
 .nav-toggle-label:hover {
@@ -102,10 +103,6 @@ nav a:hover,nav a:focus {
   align-items: center;
 }
 
-.nav-toggle-label,
-.nav-toggle {
-  display: none;
-}
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
@@ -288,8 +285,6 @@ tr:nth-child(even) {
 
 footer {
   position: static;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: rgba(214, 201, 227, 1);
   color: black;
@@ -298,6 +293,11 @@ footer {
 
 /* Tablet and Desktop navigation, and tablet stylings */
 @media screen and (min-width: 48em) {
+
+  .nav-toggle-label {
+    display: none;
+  }
+
   .banner {
     padding: 36px;
     justify-content: left;
@@ -315,10 +315,6 @@ footer {
     font-size: 3rem;
   }
 
-  .nav-toggle-label {
-    display: none;
-  }
-
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
@@ -329,8 +325,18 @@ footer {
     align-self: center;
   }
 
+/*takes all styling off of the nav */
+
   nav {
-    all: unset; /*takes all styling off of the nav */
+    position: unset;
+    text-align: unset;
+    top: unset;
+    left: unset;
+    background: unset;
+    width: unset;
+    transform: unset;
+    transform-origin: unset;
+    transition: unset;
     grid-column: 3 / 4;
     display: flex;
     align-items: center;
