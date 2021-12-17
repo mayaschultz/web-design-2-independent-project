@@ -7,15 +7,15 @@ html {
 }
 
 body {
-	margin: 0;
-	background: rgba(214, 201, 227, .85);
-	font-weight: 400;
+  margin: 0;
+  background: rgba(214, 201, 227, .85);
+  font-weight: normal;
   font-family: "PT Serif";
 }
 
 h1 {
   font-size: 4.5rem;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-family: "PT Sans";
 }
 
@@ -23,6 +23,7 @@ h1 {
   max-width: 100%;
   height: auto;
 }
+
 /* navigation styles start here */
 
 header {
@@ -68,7 +69,7 @@ nav a {
   transition: opacity 150ms ease-in-out;
 }
 
-nav a:hover,nav a:focus {
+nav a:hover, nav a:focus {
   color: #fff;
   font-weight: bold;
 }
@@ -82,9 +83,6 @@ nav a:hover,nav a:focus {
   width: 56px;
 }
 
-.nav-toggle-label {
-  display: flex;
-}
 .nav-toggle {
   display: none;
 }
@@ -103,7 +101,6 @@ nav a:hover,nav a:focus {
   align-items: center;
 }
 
-
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -117,7 +114,7 @@ nav a:hover,nav a:focus {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -130,8 +127,9 @@ nav a:hover,nav a:focus {
 }
 
 /* ~ looks for any preceeding sibling. */
+
 .nav-toggle:checked ~ nav {
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
 
 .nav-toggle:checked ~ nav a {
@@ -140,15 +138,14 @@ nav a:hover,nav a:focus {
 }
 
 /* ~ working below nav */
+
 main {
   max-width: 1600px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
-
-
 
 .banner {
   background-image: url("../images/banner.jpg");
@@ -172,7 +169,7 @@ main {
 
 .banner__text p {
   font-size: 1.125rem;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .content {
@@ -186,7 +183,7 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 24px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 .content-text {
@@ -198,8 +195,8 @@ main {
 
 .content-text h2 {
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .content-text p {
@@ -247,7 +244,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 #back {
@@ -261,7 +258,7 @@ tr:nth-child(even) {
 #about .content__image {
   width: 100%;
   height: 100%;
-  background-color: rgba(244, 227, 227, 0.5);
+  background-color: rgba(244, 227, 227, .5);
   padding: 12px;
 }
 
@@ -271,7 +268,7 @@ tr:nth-child(even) {
 
 #services .content-text {
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #list-of-services {
@@ -292,6 +289,7 @@ footer {
 }
 
 /* Tablet and Desktop navigation, and tablet stylings */
+
 @media screen and (min-width: 48em) {
 
   .nav-toggle-label {
@@ -325,7 +323,7 @@ footer {
     align-self: center;
   }
 
-/*takes all styling off of the nav */
+  /* takes all styling off of the nav */
 
   nav {
     position: unset;
@@ -359,11 +357,11 @@ footer {
   }
 
   nav a:hover {
-    font-weight: 400;
+    font-weight: normal;
   }
 
   nav a::before {
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     background: #b98268;
@@ -376,7 +374,7 @@ footer {
   }
 
   nav a:hover::before {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 
   .content {
@@ -399,8 +397,8 @@ footer {
 
   .content-text h2 {
     font-size: 3rem;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .content-text p {
@@ -409,7 +407,6 @@ footer {
     margin-top: 8px;
   }
 
-
   #about .content-text {
     width: 50%;
   }
@@ -417,7 +414,7 @@ footer {
   #about .content__image {
     width: 50%;
     height: 50%;
-    background-color: rgba(244, 227, 227, 0.5);
+    background-color: rgba(244, 227, 227, .5);
     padding: 12px;
   }
 
@@ -429,9 +426,11 @@ footer {
   table {
     width: 50%;
   }
+
 }
 
 @media screen and (min-width: 75em) {
+
   .banner {
     padding: 72px;
   }
@@ -439,4 +438,5 @@ footer {
   h1 {
     font-size: 8rem;
   }
+
 }
