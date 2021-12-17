@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Schmakeup</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link href="css/main.css" rel="stylesheet">
-    <script>
-      const onContactClick = function () {
-        location.href = "#";
-      };
-      const onLearnMoreClick = function () {
-        location.href = "./pages/about.html";
-      };
-    </script>
+    <script type="text/javascript" src="main.js"></script>
   </head>
   <body id="home">
     <header role="banner">
@@ -41,7 +34,7 @@
           <h1>Schmakeup</h1>
           <p>Professional Makeup Artist</p>
           <div>
-            <button onclick="onContactClick()" type="button">
+            <button id="contact-now" type="button">
               Contact Now
             </button>
           </div>
@@ -52,7 +45,7 @@
           <h2>About me</h2>
           <p>Maya Schultz is a professional makeup artist passionate about making every client feel their most beautiful. Experience working in all facets of makeup artistry including; bridal, editorial, events, photoshoots, etc. Maya prioritizes her client's needs and always aims to please.</p>
           <div class="content-text-buttons">
-            <button onclick="onLearnMoreClick()" type="button">
+            <button id="learn-more" type="button">
               Learn more About Me
             </button>
           </div>
